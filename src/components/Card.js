@@ -21,7 +21,7 @@ const Card = ({ ticket }) => {
     <div className="card">
       <div className="card-header">
         <span className="ticket-id">{ticket.id}</span>
-        <img src={profile} alt={`${ticket.priority} priority`} className="priority-icon" />
+        <img src={profile} alt="User profile" className="profile-icon" />
       </div>
       <h3 className="card-title">{ticket.title}</h3>
       {ticket.type === 'Feature Request' && (
